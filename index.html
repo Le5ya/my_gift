@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/script.js" defer></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body body_gift">
 	<header class="header">
@@ -63,7 +66,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="gift__form"></div>
+					<form class="gift__form form">
+						<label class="form__label">
+							<span class="form__label-text">от кого</span>
+							<input type="text" class="form__field" name="sender_name">
+						</label>
+						<label class="form__label">
+							<span class="form__label-text">телефон отправителя</span>
+							<input type="text" class="form__field" name="sender_phone">
+						</label>
+						<label class="form__label">
+							<span class="form__label-text">кому</span>
+							<input type="text" class="form__field" name="receiver_name">
+						</label>
+						<label class="form__label">
+							<span class="form__label-text">телефон получателя</span>
+							<input type="text" class="form__field" name="receiver_phone">
+						</label>
+						<label class="form__label form__label_textarea">
+							<span class="form__label-text">поздравительный текст</span>
+							<textarea class="form__field form__field_textarea" name="message" placeholder="напишите теплые слова"></textarea>
+						</label>
+						<button type="sabmit" class="form__button" desabled>Отправить</button>
+					</form>
 				</div>
 			</div>
 		</section>

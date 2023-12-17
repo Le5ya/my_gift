@@ -1,0 +1,162 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v26-cyrillic_latin-regular.woff2') format('woff2')x 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/nunito-v26-cyrillic_latin-700.woff2') format('woff2'); 
+}
+html {
+	box-sizing: inherit;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.body {
+	min-width: 320px;
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: Nunito, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #221f1f;
+}
+.body_gift {
+	background: #b2e8e8 url(../img/bg-gift.jpg) center/cover;
+}
+.body__congratulation {
+	background: #fcc5bd url(../img/bg-cong.jpg) center/cover;
+}
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+
+.header {
+	padding: 40px 0;
+}
+
+.header__logo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.gift {
+	padding: 20px 0 80px;
+}
+.gift__title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0 0 16px;
+}
+.gift__description {
+	font-size: 20px;
+	margin: 0 0 50px;
+}
+.gift__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 30px;
+}
+.gift__card {
+	max-width: 580px;
+}
+
+.gift__swiper {
+}
+.gift__swiper_card {
+	margin-bottom: 20px;
+}
+
+.gift__card_slide {
+	border-radius: 20px;
+	border: 2px solid #4baa00;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.gift__card-image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.gift__card_thumb {
+	border-radius: 10px;
+	overflow: hidden;
+}
+.gift__form {
+	max-width: 480px;
+}
+.form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	justify-items: start;
+}
+.form__label {
+	width: 100%;
+}
+.form__label-text {
+	display: block;
+	margin-bottom: 4px;
+}
+.form__field {
+	font: inherit;
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid #dedede;
+	background-color: #fbfbfb;
+	padding: 8px 16px;
+	outline: none;
+}
+.form__field:hover,
+.form__field:focus-visible,
+.form__field:active {
+	border-color: #999;
+}
+.form__label_textarea {
+	grid-column: 1 / -1;
+	
+}
+.form__field_textarea {
+	resize: vertical;
+	min-height: 150px;
+	
+}
+.form__button {
+	border-radius: 32px;
+	background-color: #4baa00;
+	border: 1px solid transparent;
+	color: #fff;
+	font-weight: 700;
+	padding: 8px 24px;
+	cursor: pointer;
+}
+.form__button:hover:not(:disabled) {
+	background-color: #58c601;
+}
+.form__button:focus-visible {
+	border-color: #58c601;
+}
+.form__button:active:not(:disabled) {
+	transform: translate(2px, 2px);
+}
+.form__button:disabled {
+	opacity: 0.4;
+}
